@@ -6,8 +6,8 @@ services:
     container_name: saas_postgres_db
     environment:
       POSTGRES_DB: saas_db
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgrespassword
+      POSTGRES_USER: asadulshaown
+      POSTGRES_PASSWORD: asadulshaown1234
     ports:
       - "5432:5432"
     volumes:
@@ -26,8 +26,8 @@ services:
       - PYTHONUNBUFFERED=1
       - DB_ENGINE=django.db.backends.postgresql
       - DB_NAME=saas_db
-      - DB_USER=postgres
-      - DB_PASSWORD=postgrespassword
+      - DB_USER=asadulshaown
+      - DB_PASSWORD=asadulshaown1234
       - DB_HOST=db
       - DB_PORT=5432
     depends_on:
